@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 HttpURLConnection urlConnection = null;
                 try {
-                    URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=Ypsilanti&appid=ac5088d78ea1228b6096540fc432c460");
+                    URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=Ypsilanti&appid=KEYHERE");
                     urlConnection = (HttpURLConnection) url.openConnection();
                     InputStream in = new BufferedInputStream(urlConnection.getInputStream());
                     String response = readStream(in);
@@ -207,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
             HttpURLConnection urlConnection = null;
             try {
 
-                URL url = new URL("https://api.openweathermap.org/data/2.5/forecast?q=Ypsilanti&appid=ac5088d78ea1228b6096540fc432c460&units=imperial");
+                URL url = new URL("https://api.openweathermap.org/data/2.5/forecast?q=Ypsilanti&appid=KEYHERE&units=imperial");
                 urlConnection = (HttpURLConnection) url.openConnection();
                 InputStream in = new BufferedInputStream(urlConnection.getInputStream());
                 String response = readStream(in);
